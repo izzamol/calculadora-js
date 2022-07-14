@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://css.gg/backspace.css' rel='stylesheet'>
+    <link href='https://css.gg/math-divide.css' rel='stylesheet'>
+
+    <title>Calculadora-Lomazzi</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="tela">
+            <p class="result" id="resultado">  </p>
+        </div>
+
+        <div id="teclado">
+            <table>
+                <tr>
+                    <td colspan="2"><button onclick="cleart('/')" class="bnt ac">AC </button></td>
+                    <td><button onclick="deletr()" class="bnt delet"><i class="gg-backspace"></i></button></td>
+                    <td><button onclick="insert('/')" class="bnt operador"> <img src="img/icons8-dividisão-30.png" width="15px" alt=""> </button> </td>
+                </tr>
+
+                <tr>
+                    <td><button onclick="insert('7')" class="bnt number">7</button></td>
+                    <td><button onclick="insert('8')" class="bnt number">8</button></td>
+                    <td><button onclick="insert('9')" class="bnt number">9</i></button> </td>
+                    <td><button onclick="insert('*')" class="bnt operador">x</button> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button onclick="insert('4')" class="bnt number">4</button></td>
+                    <td><button onclick="insert('5')" class="bnt number">5</button></td>
+                    <td><button onclick="insert('6')" class="bnt number">6</button> </td>
+                    <td><button onclick="insert('+')" class="bnt operador">+</i></button> </td>
+                </tr>
+
+
+                <tr>
+                    <td><button onclick="insert('1')" class="bnt number">1</button></td>
+                    <td><button onclick="insert('2')" class="bnt number">2</button></td>
+                    <td><button onclick="insert('3')" class="bnt number">3</button> </td>
+                    <td><button onclick="insert('-')" class="bnt operador">-</button> </td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('0')" class="bnt number">0</button></td>
+                    <td><button onclick="insert('.')" class="bnt operador">,</button> </td>
+                    <td onclick="enter()" colspan="2"><button  class="bnt ac ">=</button></td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
